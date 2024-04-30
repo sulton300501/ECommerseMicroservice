@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MediatR;
 using System.Threading.Tasks;
+using Catalog.Domain.Entities;
 
-namespace Catalog.Domain
+namespace Catalog.Application.UseCases.CatalogCases.Commands
 {
-    public class ProductCatalog
+    public class CreateCatalogCommand : IRequest<ResponseModel>
     {
-        public Guid Id { get; set; }=Guid.NewGuid();
         public string Name { get; set; }
         public string Description { get; set; }
-
     }
 }

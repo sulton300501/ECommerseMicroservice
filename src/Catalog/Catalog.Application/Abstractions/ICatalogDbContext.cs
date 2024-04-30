@@ -10,7 +10,7 @@ namespace Catalog.Application.Abstractions
 {
     public interface ICatalogDbContext
     {
-        public DbSet<ProductCatalog> Catalogs { get; set; }
+        public  DbSet<ProductCatalog> Catalogs { get; set; }
 
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken);
    
