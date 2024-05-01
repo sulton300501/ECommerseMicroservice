@@ -1,0 +1,16 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "api/CreateCatalog",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7196
+        }
+      ],
+      "UpstreamPathTemplate": "/apigetaway/create",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    }
+  ]
+}

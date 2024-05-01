@@ -1,0 +1,6 @@
+@ApiGetAwayMicroService_HostAddress = http://localhost:5077
+
+GET {{ApiGetAwayMicroService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
